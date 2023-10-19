@@ -10,6 +10,7 @@ import { BiCalendar } from 'react-icons/bi'
 import Search from './components/Search';
 import AddAppointment from './components/AddAppointment';
 import AppointmentInfo from './components/AppointmentInfo';
+import StarRating from './components/StarRating';
 
 function App() {
 
@@ -47,6 +48,7 @@ function App() {
   }, [fetchData])
   return (
     <>
+      <StarRating totalStars={10} />
       {/* <UseRefForm />
       <UseStateForm />
       <UseCustomHookForm />
