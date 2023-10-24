@@ -11,6 +11,8 @@ import Search from './components/Search';
 import AddAppointment from './components/AddAppointment';
 import AppointmentInfo from './components/AppointmentInfo';
 import StarRating from './components/StarRating';
+import Tree from './components/context/Tree';
+import TreeCustomHook from './components/context/TreeCustomHook';
 
 function App() {
 
@@ -48,6 +50,8 @@ function App() {
   }, [fetchData])
   return (
     <>
+      <Tree />
+      <TreeCustomHook />
       <StarRating totalStars={10} />
       {/* <UseRefForm />
       <UseStateForm />
